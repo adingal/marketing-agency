@@ -71,7 +71,7 @@ function Header() {
 
   return (
     <CustomContainer>
-      <Navbar className="py-3 py-lg-4" expand={showToggle}>
+      <Navbar container={false} className="py-3 py-lg-4" expand={showToggle}>
         <NavbarBrand className="fw-semibold" href="/">
           SpaceBox
         </NavbarBrand>
