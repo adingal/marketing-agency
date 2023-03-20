@@ -62,7 +62,7 @@ function Header() {
     if (links && links.length > 0) {
       return links.map((link, idx) => (
         <NavItem key={`${link}-${idx}`}>
-          <StyledNavLink href={`#${link}`}>{link}</StyledNavLink>
+          <StyledNavLink href={`#${link.toLowerCase()}`}>{link}</StyledNavLink>
         </NavItem>
       ))
     }
