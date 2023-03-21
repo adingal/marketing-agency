@@ -55,15 +55,21 @@ function Header() {
   const links = ['Home', 'Services', 'About', 'Portfolio', 'Blog', 'Contact']
   const [isOpen, setIsOpen] = useState(false)
   const { width } = useWindowDimensions()
-  const showToggle = width > 991
+  const showToggle = width > 768
 
-  const toggle = () => setIsOpen(!isOpen)
+  const toggle = () => {
+    if (width <= 768) {
+      setIsOpen(!isOpen)
+    }
+  }
 
   const renderNavItems = () => {
     if (links && links.length > 0) {
       return links.map((link, idx) => (
         <NavItem key={`${link}-${idx}`}>
-          <StyledNavLink href={`#${link.toLowerCase()}`}>{link}</StyledNavLink>
+          <StyledNavLink onClick={toggle} href={`#${link.toLowerCase()}`}>
+            {link}
+          </StyledNavLink>
         </NavItem>
       ))
     }
