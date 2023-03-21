@@ -1,51 +1,10 @@
 import React from 'react'
-import {
-  Row,
-  Col,
-  Button,
-  CardBody,
-  Card,
-  CardTitle,
-  CardText,
-} from 'reactstrap'
-import styled from 'styled-components'
-import CustomContainer from '../atoms/CustomContainer'
-import ItemCard from '../atoms/ItemCard'
-import envelopeIcon from '../assets/envelopeIcon.png'
-import codeIcon from '../assets/codeIcon.png'
-
-const StyledHeading = styled('h2')`
-  margin-bottom: 16px;
-  @media (min-width: 577px) {
-    font-size: 2rem;
-  }
-  @media (min-width: 992px) {
-    font-size: 2.5rem;
-    margin-bottom: 24px;
-  }
-  @media (min-width: 1201px) {
-    font-size: 3rem;
-  }
-`
-
-const StyledRow = styled(Row)`
-  > div {
-    margin-bottom: 30px;
-  }
-  > div:first-of-type {
-    text-align: center;
-  }
-  @media (min-width: 577px) {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  @media (min-width: 769px) {
-    max-width: 100%;
-    > div:first-of-type {
-      text-align: left;
-    }
-  }
-`
+import { Col, Button } from 'reactstrap'
+import CustomContainer from '../../atoms/CustomContainer'
+import ItemCard from '../../atoms/ItemCard'
+import envelopeIcon from '../../assets/envelopeIcon.png'
+import codeIcon from '../../assets/codeIcon.png'
+import { StyledRow, StyledHeading } from './style'
 
 function Service() {
   return (
