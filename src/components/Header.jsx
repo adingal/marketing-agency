@@ -51,7 +51,7 @@ const StyledNavLink = styled(NavLink)`
 `
 
 function Header() {
-  const links = ['Home', 'About', 'Portfolio', 'Blog', 'Contact']
+  const links = ['Home', 'Services', 'About', 'Portfolio', 'Blog', 'Contact']
   const [isOpen, setIsOpen] = useState(false)
   const { width } = useWindowDimensions()
   const showToggle = width > 991
