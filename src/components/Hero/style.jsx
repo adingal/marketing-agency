@@ -24,7 +24,7 @@ export const StyledHeroContainer = styled('div')`
   }
   @media (min-width: 992px) {
     > img {
-      max-width: 100%;
+      max-width: 90%;
     }
   }
 `
