@@ -34,12 +34,12 @@ export const StyledRow = styled(Row)`
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
+  padding: 50px 0;
   > div:last-of-type {
     margin-bottom: 30px;
   }
   @media (min-width: 769px) {
     flex-direction: row;
-    padding: 50px 0;
     > div:last-of-type {
       margin-bottom: 0;
     }
