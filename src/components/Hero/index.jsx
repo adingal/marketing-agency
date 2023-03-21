@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col } from 'reactstrap'
+import { Button, Col } from 'reactstrap'
 import CustomContainer from '../../atoms/CustomContainer'
 import heroImage from '../../assets/hero.png'
 import {
@@ -26,12 +26,13 @@ function Hero() {
                 Commodi eligendi, consequatur repudiandae magni quas aperiam.
               </StyledLeadText>
               <div>
-                <a
+                <Button
+                  color="danger"
                   href="#about"
-                  className="btn btn-danger px-3 py-lg-2 me-3 me-lg-4 rounded-pill"
+                  className="px-3 py-lg-2 me-3 me-lg-4 rounded-pill"
                 >
                   More About Us
-                </a>
+                </Button>
                 <StyledAnchor href="#contact">Get in Touch</StyledAnchor>
               </div>
             </StyledHeroContainer>
