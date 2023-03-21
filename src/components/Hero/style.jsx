@@ -46,8 +46,6 @@ export const StyledRow = styled(Row)`
 `
 
 export const StyledHeading = styled('h1')`
-  font-weight: 600;
-  color: #2d4588;
   @media (min-width: 577px) {
     font-size: 2.5rem;
   }
