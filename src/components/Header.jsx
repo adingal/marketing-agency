@@ -46,7 +46,7 @@ const StyledNavLink = styled(NavLink)`
     transition: 300ms;
   }
   &:hover::before {
-    width: 100%;
+    width: 80%;
   }
 `
 
