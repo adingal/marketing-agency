@@ -62,11 +62,13 @@ export const StyledHeading = styled('h1')`
 export const StyledLeadText = styled('p')`
   font-weight: 400;
   font-size: 0.9rem;
+  margin-bottom: 16px;
   color: rgba(0, 0, 0, 0.55);
   @media (min-width: 577px) {
     font-size: 1rem;
   }
   @media (min-width: 992px) {
+    margin-bottom: 24px;
     font-size: 1.1rem;
   }
 `
