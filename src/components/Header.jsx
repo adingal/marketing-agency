@@ -70,25 +70,27 @@ function Header() {
   }
 
   return (
-    <CustomContainer>
-      <Navbar container={false} className="py-3 py-lg-4" expand={showToggle}>
-        <NavbarBrand className="fw-semibold" href="/">
-          SpaceBox
-        </NavbarBrand>
-        <StyledButton type="button" onClick={toggle}>
-          {!isOpen ? (
-            <BurgerIcon fill="#C0C0C0" height={32} width={32} />
-          ) : (
-            <CloseIcon fill="#C0C0C0" height={32} width={32} />
-          )}
-        </StyledButton>
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="ms-auto" navbar>
-            {renderNavItems()}
-          </Nav>
-        </Collapse>
-      </Navbar>
-    </CustomContainer>
+    <header>
+      <CustomContainer>
+        <Navbar container={false} className="py-3 py-lg-4" expand={showToggle}>
+          <NavbarBrand className="fw-semibold" href="/">
+            SpaceBox
+          </NavbarBrand>
+          <StyledButton type="button" onClick={toggle}>
+            {!isOpen ? (
+              <BurgerIcon fill="#C0C0C0" height={32} width={32} />
+            ) : (
+              <CloseIcon fill="#C0C0C0" height={32} width={32} />
+            )}
+          </StyledButton>
+          <Collapse isOpen={isOpen} navbar>
+            <Nav className="ms-auto" navbar>
+              {renderNavItems()}
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </CustomContainer>
+    </header>
   )
 }
 
