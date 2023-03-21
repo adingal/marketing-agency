@@ -13,6 +13,7 @@ import useWindowDimensions from '../hooks/useWindowDimensions'
 import CustomContainer from '../atoms/CustomContainer'
 import { ReactComponent as BurgerIcon } from '../assets/burgerIcon.svg'
 import { ReactComponent as CloseIcon } from '../assets/closeIcon.svg'
+import logo from '../assets/logo.png'
 
 const StyledButton = styled(Button)`
   display: none;
@@ -74,7 +75,7 @@ function Header() {
       <CustomContainer>
         <Navbar container={false} className="py-3 py-lg-4" expand={showToggle}>
           <NavbarBrand className="fw-semibold" href="/">
-            SpaceBox
+            <img src={logo} alt="SpaceBox" />
           </NavbarBrand>
           <StyledButton type="button" onClick={toggle}>
             {!isOpen ? (
