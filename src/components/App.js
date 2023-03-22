@@ -4,6 +4,7 @@ import Services from './Services'
 import About from './About'
 import Portfolio from './Portfolio'
 import Blog from './Blog'
+import Contact from './Contact'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Portfolio />
       <Blog />
+      <Contact />
     </>
   )
 }
