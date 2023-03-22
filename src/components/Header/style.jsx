@@ -29,7 +29,7 @@ export const StyledNavLink = styled(NavLink)`
     height: 1px;
     position: absolute;
     bottom: 3px;
-    background-color: #031d44;
+    background-color: #ff3c4c;
     transition: 300ms;
   }
   &:hover::before {
