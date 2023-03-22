@@ -36,7 +36,7 @@ const items = [
 function Portfolio() {
   const [activeIndex, setActiveIndex] = useState(0)
   const [animating, setAnimating] = useState(false)
-  const { width, height } = useWindowDimensions()
+  const { width } = useWindowDimensions()
 
   const next = () => {
     if (animating) return
