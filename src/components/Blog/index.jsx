@@ -40,7 +40,7 @@ function Blog() {
   return (
     <div id="blog">
       <CustomContainer>
-        <p className="small text-uppercase text-danger fw-semibold mb-0">
+        <p className="small text-uppercase text-sm-center text-lg-start text-danger fw-semibold mb-0">
           Blog Stories
         </p>
         <StyledHeading>Check Our News</StyledHeading>

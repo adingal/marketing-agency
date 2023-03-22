@@ -5,9 +5,11 @@ export const StyledHeading = styled('h2')`
   margin-bottom: 16px;
   @media (min-width: 577px) {
     font-size: 2rem;
+    text-align: center;
   }
   @media (min-width: 992px) {
     font-size: 2.5rem;
+    text-align: left;
     margin-bottom: 24px;
   }
   @media (min-width: 1201px) {
