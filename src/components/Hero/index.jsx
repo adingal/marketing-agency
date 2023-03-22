@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Col } from 'reactstrap'
 import CustomContainer from '../../atoms/CustomContainer'
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 import heroImage from '../../assets/hero.png'
 import {
   StyledHeroContainer,
@@ -11,6 +12,7 @@ import {
 } from './style'
 
 function Hero() {
+  const { width } = useWindowDimensions()
   return (
     <div id="home">
       <CustomContainer>
@@ -33,7 +35,9 @@ function Hero() {
                 >
                   More About Us
                 </Button>
-                <StyledAnchor href="#contact">Get in Touch</StyledAnchor>
+                {width > 576 && (
+                  <StyledAnchor href="#contact">Get in Touch</StyledAnchor>
+                )}
               </div>
             </StyledHeroContainer>
           </Col>
