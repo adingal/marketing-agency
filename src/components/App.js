@@ -5,6 +5,7 @@ import About from './About'
 import Portfolio from './Portfolio'
 import Blog from './Blog'
 import Contact from './Contact'
+import Footer from './Footer'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Portfolio />
       <Blog />
       <Contact />
+      <Footer />
     </>
   )
 }

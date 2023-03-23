@@ -32,3 +32,20 @@ h6 {
 #contact {
   padding: 50px 0;
 }
+
+footer {
+  background-color: #2d4588;
+  padding: 50px 0;
+}
+
+@media (min-width: 769px) {
+  footer {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer .nav {
+    justify-content: center;
+  }
+}
